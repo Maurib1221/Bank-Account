@@ -21,5 +21,5 @@ class CheckingAccount(BankAccount):
     # Override the __str__ method to include transfer limit
     def __str__(self):
         return super().__str__() + f"Transfer Limit: ${self.transfer_limit}\n"
-        self.transfer_limit = transfer_limit
+
 
