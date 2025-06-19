@@ -35,6 +35,9 @@ class BankAccount:
         else:
             print("Insufficient funds or invalid withdrawal amount.")
 
+    def get_account_number(self):
+        return self.__account_number
+
     # Return a string representation of the account details
     def __str__(self):
         return (f"Bank: {self.bank_title}\n"
