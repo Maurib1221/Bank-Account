@@ -44,12 +44,3 @@ acc2 = BankAccount("John", 2000, 200)
 acc2.deposit(300)
 acc2.withdraw(2500)
 print(acc2)
-
-
-#Create two subclasses
-
-class SavingsAccount(BankAccount):
-    # Create a savings account with an interest rate
-    def __init__(self, customer_name, current_balance, minimum_balance, interest_rate):
-        super().__init__(customer_name, current_balance, minimum_balance)
-        self.interest_rate = interest_rate
