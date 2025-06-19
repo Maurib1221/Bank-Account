@@ -22,4 +22,3 @@ class CheckingAccount(BankAccount):
     def __str__(self):
         return super().__str__() + f"Transfer Limit: ${self.transfer_limit}\n"
 
-
