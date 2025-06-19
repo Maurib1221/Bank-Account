@@ -1,4 +1,6 @@
-
+import random
+account_numbers= []
+routing_numbers = []
 # Define a class to represent a bank account
 class BankAccount:
     # Class variable for the bank's name
@@ -9,6 +11,13 @@ class BankAccount:
         self.customer_name = customer_name
         self.current_balance = current_balance
         self.minimum_balance = minimum_balance
+        self.__routing_number = random.randint(100000000, 999999999)
+        while True:
+            self.__account_number = random.randint(1000000000, 9999999999)
+            if self.__account_number not in account_numbers:
+                account_numbers.append(self.__account_number)
+                break
+
 
     # Deposit a specified amount into the account
     def deposit(self, amount):
@@ -31,7 +40,10 @@ class BankAccount:
         return (f"Bank: {self.bank_title}\n"
                 f"Customer: {self.customer_name}\n"
                 f"Current Balance: {self.current_balance}\n"
-                f"Minimum Balance: {self.minimum_balance}\n")
+                f"Minimum Balance: {self.minimum_balance}\n"
+                f"Account Number: {self.__account_number}\n"
+                f"Routing Number: {self.__routing_number}\n")
+
 
 # Create a bank account for Clarice and perform transactions
 acc1 = BankAccount("Clarice", 1000, 100)
