@@ -19,7 +19,6 @@ recipient = BankAccount("Jordan", 400, 100)
 checking_acc.transfer(300, recipient)  # valid transfer
 print(checking_acc)
 print(recipient)
-
 # Second sample usage of CheckingAccount
 checking_acc2 = CheckingAccount("Alex", 800, 200, 250)
 recipient2 = BankAccount("Taylor", 500, 50)
