@@ -48,13 +48,3 @@ print(acc2)
 
 #Create two subclasses
 
-class SavingsAccount(BankAccount):
-    # Create a savings account with an interest rate
-    def __init__(self, customer_name, current_balance, minimum_balance, interest_rate):
-        super().__init__(customer_name, current_balance, minimum_balance)
-        self.interest_rate = interest_rate
-
-class CheckingAccount(BankAccount):
-    def __init__(self, customer_name, current_balance, minimum_balance, transfer_limit):
-        super().__init__(customer_name, current_balance, minimum_balance)
-        self.transfer_limit = transfer_limit
